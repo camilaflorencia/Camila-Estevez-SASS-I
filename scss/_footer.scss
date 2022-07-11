@@ -1,0 +1,19 @@
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.5rem;
+  img {
+    width: 6rem;
+  }
+}
+
+.mediopago {
+  padding: 0rem 1rem 0rem 0rem;
+  font-family: $fuenteSecundaria;
+}
+
+.estilotexto h2 {
+  padding-bottom: 1rem;
+}
