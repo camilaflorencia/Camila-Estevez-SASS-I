@@ -7,7 +7,7 @@ header {
     li a {
       text-decoration: none;
       color: $TextColor;
-      font-size: $TextSm;
+      font-size: map-get($map: $tamText, $key: "uno");
     }
   }
   section img {
@@ -64,5 +64,8 @@ header {
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
+    ul li a {
+      font-size: map-get($map: $tamText, $key: "cuatro");
+    }
   }
 }

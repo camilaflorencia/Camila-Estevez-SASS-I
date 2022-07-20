@@ -1,2 +1,8 @@
 $Black: rgb(20, 20, 20);
 $TextColor: rgb(241, 237, 237);
+
+@mixin dflex($dflex, $fdirec, $alignf) {
+  display: $dflex;
+  flex-direction: $fdirec;
+  align-items: $alignf;
+}
