@@ -1,19 +1,48 @@
 footer {
   background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2rem;
-  font-size: map-get($map: $tamText, $key: "dos");
+  font-size: 0.8rem;
   img {
     width: 6rem;
   }
 }
 
 .mediopago {
-  padding: 0rem 1rem 0rem 0rem;
+  margin-left: 3rem;
   font-family: $fuenteSecundaria;
+}
+
+.ImgFooter {
+  align-items: center;
+  display: flex;
+
+  img {
+    padding: 0 0.5rem;
+    width: 20%;
+  }
 }
 
 .estilotexto h2 {
   padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 1rem;
+    justify-content: space-around;
+  }
+  .mediopago {
+    margin-left: 4.2rem;
+  }
+
+  .ImgFooter {
+    align-items: center;
+    display: flex;
+    img {
+      padding: 0 0.5rem;
+      width: 10%;
+    }
+  }
 }

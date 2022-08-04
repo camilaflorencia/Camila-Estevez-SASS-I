@@ -8,6 +8,7 @@ header {
       text-decoration: none;
       color: $TextColor;
       font-size: map-get($map: $tamText, $key: "uno");
+      font-weight: bold;
     }
   }
   section img {
@@ -26,6 +27,7 @@ header {
 
 .barraSuperior {
   text-align: center;
+  background-color: black;
   transform: translateX(0%);
   animation-name: animatediv;
   animation-iteration-count: 1;
@@ -49,7 +51,7 @@ header {
     transition: transform 2s;
     cursor: pointer;
     a:hover {
-      color: rgb(251, 255, 0);
+      color: rgb(65, 201, 224);
       cursor: pointer;
     }
   }
@@ -57,7 +59,14 @@ header {
     display: flex;
     li {
       padding: 1rem;
+      a {
+        font-size: 1.2rem;
+      }
     }
+  }
+  img {
+    width: 300px;
+    border-radius: 1rem;
   }
 }
 
@@ -66,6 +75,10 @@ header {
     flex-direction: row;
     ul li a {
       font-size: map-get($map: $tamText, $key: "cuatro");
+    }
+    img {
+      width: 200px;
+      border-radius: 1rem;
     }
   }
 }
